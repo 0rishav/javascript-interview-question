@@ -1,3 +1,5 @@
+// Advance form validation:--
+
 const form = document.querySelector(".form");
 
 form.addEventListener("submit", (e) => {
@@ -31,7 +33,7 @@ form.addEventListener("submit", (e) => {
         setError(document.querySelector(".input"), "Query Type is required or not selected");
         valid = false;
     }
-    if (message.value.trim().length < 10) {  // Adjusted length for validation
+    if (message.value.trim().length < 10) {  
         setError(message, "Message is required or too short!");
         valid = false;
     }
