@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form With Sucess Message</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="left">
+          <h1>Stay Updated</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on.</p>
+          <div class="list">
+            <li>Product discovery and building what matters.</li>
+            <li>Measuring to ensure update are a success.</li>
+            <li>And Much More.</li>
+          </div>
+          <div class="email-label">
+            <label for="email">Email Address</label>
+            <span class="error" style="color: red;"></span>
+          </div>
+         <form class="form">
+            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+            <button>Subscribe to my newsletter</button>
+         </form>
+        </div>
+        <div class="right">
+            <img src="https://cdn.pixabay.com/photo/2024/05/23/12/24/ai-generated-8783105_640.jpg" alt="">
+        </div>
+      </div>
+      <div class="submit">
+        <p style="font-size: 30px; color: red;">&#10004;</p>
+        <h1>Thanks for Subscribing.</h1>
+        <span>A confirmation email has been sent to <b class="updateEmail"></b> Please open it and click the button inside to confirm your subscription.</span>
+        <button class="dismiss">Dismiss Message</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
